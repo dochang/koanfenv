@@ -1,0 +1,10 @@
+APPLY_FIXES: none
+SHOW_ELAPSED_TIME: true
+IGNORE_GITIGNORED_FILES: true
+DISABLE:
+  - SPELL
+FILEIO_REPORTER: true
+
+GO_GOLANGCI_LINT_CLI_LINT_MODE: project
+# https://github.com/golangci/golangci-lint/issues/1574#issuecomment-804504899
+# https://github.com/megalinter/megalinter/issues/757
