@@ -1,6 +1,10 @@
 <!-- markdownlint-disable MD010 -->
 # koanfenv
 
+[![CI](https://github.com/dochang/koanfenv/actions/workflows/ci.yml/badge.svg)](https://github.com/dochang/koanfenv/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/dochang/koanfenv/branch/main/graph/badge.svg?token=DprPFK02NL)](https://codecov.io/gh/dochang/koanfenv)
+[![Go Reference](https://pkg.go.dev/badge/github.com/dochang/koanfenv.svg)](https://pkg.go.dev/github.com/dochang/koanfenv)
+
 `koanfenv` provides callbacks which convert environment variables to [koanf][]
 keys.  These callbacks are used for [`env.Provider`][provider]
 .
