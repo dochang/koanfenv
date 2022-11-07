@@ -45,20 +45,20 @@ func fillMap(keyMap *map[string]string, i interface{}) {
 //
 // Here are some examples:
 //
-//   // Translate "VAR" to "key".
-//   Field string `koanf:"key" env:"VAR"`
+//	// Translate "VAR" to "key".
+//	Field string `koanf:"key" env:"VAR"`
 //
-//   // Translate "VAR" to "Field"
-//   Field string `koanf:"" env:"VAR"`
-//   Field string `env:"VAR"`
+//	// Translate "VAR" to "Field"
+//	Field string `koanf:"" env:"VAR"`
+//	Field string `env:"VAR"`
 //
-//   // Ignore these fields.
-//   Field string `koanf:"-" env:"VAR"`
-//   Field string `koanf:"key" env:"-"`
-//   Field string `koanf:"key" env:""`
-//   Field string `koanf:"key"`
-//   Field string ``
-//   Field string
+//	// Ignore these fields.
+//	Field string `koanf:"-" env:"VAR"`
+//	Field string `koanf:"key" env:"-"`
+//	Field string `koanf:"key" env:""`
+//	Field string `koanf:"key"`
+//	Field string ``
+//	Field string
 func ByStruct(i interface{}) func(string) string {
 	keyMap := map[string]string{}
 
