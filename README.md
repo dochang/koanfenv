@@ -2,6 +2,7 @@
 # koanfenv
 
 [![CI](https://github.com/dochang/koanfenv/actions/workflows/ci.yml/badge.svg)](https://github.com/dochang/koanfenv/actions/workflows/ci.yml)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/dochang/koanfenv/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/dochang/koanfenv/tree/master)
 [![codecov](https://codecov.io/gh/dochang/koanfenv/branch/master/graph/badge.svg?token=DprPFK02NL)](https://codecov.io/gh/dochang/koanfenv)
 [![Go Reference](https://pkg.go.dev/badge/github.com/dochang/koanfenv.svg)](https://pkg.go.dev/github.com/dochang/koanfenv)
 
