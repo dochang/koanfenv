@@ -5,9 +5,6 @@ DISABLE:
   - SPELL
 FILEIO_REPORTER: true
 
-GO_GOLANGCI_LINT_CLI_LINT_MODE: project
-# https://github.com/golangci/golangci-lint/issues/1574#issuecomment-804504899
-# https://github.com/oxsecurity/megalinter/issues/757
 GO_REVIVE_CLI_LINT_MODE: project
 GO_REVIVE_ARGUMENTS: ./...
 GO_REVIVE_CONFIG_FILE: LINTER_DEFAULT
