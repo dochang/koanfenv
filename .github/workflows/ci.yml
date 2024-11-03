@@ -1,5 +1,3 @@
-# kics-scan disable=555ab8f9-2001-455e-a077-f2d0f41e2fb9
-# Prefer mutable but stable tags
 name: CI
 on:
   push:
@@ -24,7 +22,7 @@ jobs:
         id: ml
         # You can override Mega-Linter flavor used to have faster performances
         # More info at https://megalinter.io/flavors/
-        uses: oxsecurity/megalinter@v8
+        uses: oxsecurity/megalinter/flavors/go@v8.1.0
         env:
           # All available variables are described in documentation
           # https://megalinter.io/config-file/
