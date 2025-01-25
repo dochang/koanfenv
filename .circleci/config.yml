@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  go: circleci/go@1.12.0
+  go: circleci/go@2.2.4
   codecov: codecov/codecov@5.2.0
 
 jobs:
@@ -27,15 +27,12 @@ jobs:
       tag: << parameters.go-version >>
     steps:
       - checkout
-      - go/load-cache:
-          key: &go-mod-cache-key v1-go-mod-<< parameters.go-version >>
-      - go/mod-download
-      - go/save-cache:
-          key: *go-mod-cache-key
-      - go/test:
-          coverprofile: coverage.txt
-          covermode: atomic
-          coverpkg: ./...
+      - go/with-cache:
+          steps:
+            - go/mod-download
+            - go/test:
+                coverprofile: coverage.txt
+                covermode: atomic
       - codecov/upload:
           files: coverage.txt
 
